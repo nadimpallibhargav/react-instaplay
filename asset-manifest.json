@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/react-instaplay/static/js/main.7b8e76cc.js",
+    "static/js/787.e641f7ee.chunk.js": "/react-instaplay/static/js/787.e641f7ee.chunk.js",
+    "index.html": "/react-instaplay/index.html",
+    "main.7b8e76cc.js.map": "/react-instaplay/static/js/main.7b8e76cc.js.map",
+    "787.e641f7ee.chunk.js.map": "/react-instaplay/static/js/787.e641f7ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.7b8e76cc.js"
+  ]
+}

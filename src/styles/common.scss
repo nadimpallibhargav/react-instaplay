@@ -1,0 +1,31 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: $color-white-0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: $color-blue-1;    
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1168px;
+    margin: auto;
+    @media (max-width: 1200px) {
+        padding: 0 20px;
+    }    
+}

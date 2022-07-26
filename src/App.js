@@ -6,6 +6,8 @@ import filter from './assets/images/filter.svg';
 import downArrow from './assets/images/downArrow.svg';
 import homeStar from './assets/images/homeStar.svg';
 import homePlay from './assets/images/homePlay.svg';
+import leftArrow from './assets/images/leftArrow.svg';
+import rightArrow from './assets/images/rightArrow.svg';
 
 const App = () => {
 
@@ -73,6 +75,18 @@ const App = () => {
             ): (
               <h2>No Movies</h2>
             )}
+          </div>
+          <div className="trendingPagination">
+            <ul>
+              <li><button><img src={leftArrow} alt="previous icon" /></button></li>
+              <li><button>1</button></li>
+              <li><button>2</button></li>
+              <li><button>3</button></li>
+              <li><button>4</button></li>
+              <li><button>5</button></li>
+              <li><button>6</button></li>
+              <li><button><img src={rightArrow} alt="next icon" /></button></li>
+            </ul>
           </div>
         </div>
       </section>

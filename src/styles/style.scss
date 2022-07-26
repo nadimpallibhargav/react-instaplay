@@ -50,8 +50,7 @@
             }
             button {
                 color: $color-black-0;
-                @extend %font-regular-18;
-                cursor: pointer;
+                @extend %font-regular-18;                
                 background-color: $color-white-0;
                 border: none;
             }
@@ -61,6 +60,7 @@
         @extend %flex-alignStart-spaceBetween;
         flex-wrap: wrap;
         gap: 32px 16px;
+        padding-bottom: 52px;
     }
     .movieCard {
         width: 280px;
@@ -109,6 +109,30 @@
             img {
 
             }
+        }
+    }
+    &Pagination {
+        ul {
+            @extend %flex-alignCenter-spaceBetween;
+            width: 310px;
+            max-width: 100%;
+            margin: auto;
+            gap: 20px;
+        }
+        button {
+            @extend %font-regular-18;
+            color: $color-white-2;
+            background-color: unset;
+            border: none;
+            display: block;
+            &.active {
+                color: $color-orange;
+                border-bottom: 1px solid $color-orange;
+            }
+        }
+        img {
+            vertical-align: text-top;
+            display: block;
         }
     }
 

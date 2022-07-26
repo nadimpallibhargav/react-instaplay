@@ -10,11 +10,13 @@ header {
     .search {
         @extend %flex-alignStart-spaceBetween;   
         border-radius: 5px; 
-        span {
+        button {
             background: $orange-gradient;
             padding: 11px 15px 13px 13px;
+            border: none;
             border-top-right-radius: 5px; 
             border-bottom-right-radius: 5px; 
+            cursor: pointer;
         }            
         img {
             max-width: 20px;

@@ -1,12 +1,21 @@
 {
   "files": {
-    "main.js": "/react-instaplay/static/js/main.7b8e76cc.js",
+    "main.css": "/react-instaplay/static/css/main.8ccfd01a.css",
+    "main.js": "/react-instaplay/static/js/main.60b2ec48.js",
     "static/js/787.e641f7ee.chunk.js": "/react-instaplay/static/js/787.e641f7ee.chunk.js",
+    "static/media/homeBanner.png": "/react-instaplay/static/media/homeBanner.46519eeabdf9414e87ca.png",
     "index.html": "/react-instaplay/index.html",
-    "main.7b8e76cc.js.map": "/react-instaplay/static/js/main.7b8e76cc.js.map",
+    "static/media/homePlay.svg": "/react-instaplay/static/media/homePlay.fdecc4f5435545ca89bd236a504122b5.svg",
+    "static/media/search.svg": "/react-instaplay/static/media/search.cbe70251c35bafdcc506cf6e98554d3c.svg",
+    "static/media/filter.svg": "/react-instaplay/static/media/filter.363a6751e6a8b8282919d5e1a669e469.svg",
+    "static/media/homeStar.svg": "/react-instaplay/static/media/homeStar.c269ce952a169b1091e7f0696a0cd30f.svg",
+    "static/media/downArrow.svg": "/react-instaplay/static/media/downArrow.d8a9e080929123652b474a40fba8b35c.svg",
+    "main.8ccfd01a.css.map": "/react-instaplay/static/css/main.8ccfd01a.css.map",
+    "main.60b2ec48.js.map": "/react-instaplay/static/js/main.60b2ec48.js.map",
     "787.e641f7ee.chunk.js.map": "/react-instaplay/static/js/787.e641f7ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.7b8e76cc.js"
+    "static/css/main.8ccfd01a.css",
+    "static/js/main.60b2ec48.js"
   ]
 }

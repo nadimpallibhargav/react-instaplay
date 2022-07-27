@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import Header from './components/header';
 import './styles/style.scss';
+import './components/header/header.scss';
 import bannerImg from './assets/images/homeBanner.png';
 import filter from './assets/images/filter.svg';
 import downArrow from './assets/images/downArrow.svg';
@@ -8,13 +8,21 @@ import homeStar from './assets/images/homeStar.svg';
 import homePlay from './assets/images/homePlay.svg';
 import leftArrow from './assets/images/leftArrow.svg';
 import rightArrow from './assets/images/rightArrow.svg';
+import logo from './assets/images/logo.png';
+import searchImg from './assets/images/search.svg';
+import inputLoader from './assets/images/inputLoader.gif';
 
 const App = () => {
 
+  const [search, setSearch] = useState('');
   const [movies, setMovies] = useState([]);
 
-  async function fetchMovie() {
-    const apiresponse = await fetch('https://api.themoviedb.org/3/movie/popular?api_key=8081a26645ae034a7e21ff1d42432898');
+  async function fetchMovie(title) {
+    const apiresponse = await fetch( title ? 
+      (`https://api.themoviedb.org/3/search/movie?api_key=8081a26645ae034a7e21ff1d42432898&language=en-US&query=${title}&page=1&include_adult=false`)
+      :
+      ('https://api.themoviedb.org/3/movie/popular?api_key=8081a26645ae034a7e21ff1d42432898')
+    );
     const jsonData = await apiresponse.json();
     const moviesData = jsonData.results;
     setMovies(moviesData);
@@ -24,10 +32,46 @@ const App = () => {
     fetchMovie();
   }, []);
 
+  function titleEnter(e) {
+    setSearch(e.target.value);
+
+    setTimeout(doneTyping, 500);
+
+    if(e.target.value.length >= 3) {
+      document.querySelector('.searchImg').style.display = 'none';
+      document.querySelector('.inputLoader').style.display = 'initial';      
+      setTimeout(() => {
+        fetchMovie(search);
+      }, 300);
+    } else {
+      fetchMovie();
+      document.querySelector('.searchImg').style.display = 'block';
+      document.querySelector('.inputLoader').style.display = 'none';
+    }
+  }
+
+  function doneTyping () {
+    document.querySelector('.searchImg').style.display = 'block';
+    document.querySelector('.inputLoader').style.display = 'none'; 
+  }
+
   return (    
     <main className="App">
 
-      <Header />
+    <header>
+      <div className="container">
+        <nav>
+          <img src={logo} alt="logo" className='logo' />
+          <div className="search">
+            <input value={search} placeholder='Search movies' onChange={(e) => titleEnter(e)} />
+            <button onClick={() => fetchMovie(search)}>
+              <img src={searchImg} alt="search movies" className='searchImg' width={20} height={20} />
+              <img src={inputLoader} alt="loading" className='inputLoader' width={20} height={20} />
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
 
       <section className="banner">
         <div className="bannerImg">

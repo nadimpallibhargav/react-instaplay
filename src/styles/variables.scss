@@ -69,15 +69,20 @@ $color-blue-2: rgba(255, 255, 255, 0.06);
     line-height: 50px;
 }
 
-%flex-alignCenter-spaceBetween {
+%flex-alignCenter-justifyBetween {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-%flex-alignStart-spaceBetween {
+%flex-alignStart-justifyBetween {
     display: flex;
     justify-content: space-between;
+}
+
+%flex-alignStart-justifyCenter {
+    display: flex;
+    justify-content: center;
 }
 
 %flex-alignCenter {

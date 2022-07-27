@@ -5,10 +5,10 @@ header {
     padding: 12px 0 14px;
 
     nav {
-        @extend %flex-alignCenter-spaceBetween;
+        @extend %flex-alignCenter-justifyBetween;
     }
     .search {
-        @extend %flex-alignStart-spaceBetween;   
+        @extend %flex-alignStart-justifyBetween;   
         border-radius: 5px; 
         button {
             background: $orange-gradient;
@@ -40,6 +40,9 @@ header {
             @extend %font-regular-16;
             color: $color-white-0;
         }            
+    }
+    .inputLoader {
+        display: none;
     }
 
     @media (max-width: 768px) {

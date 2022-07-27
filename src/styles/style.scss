@@ -8,7 +8,7 @@
         @extend %font-medium-28;
     }
     &Filter {
-        @extend %flex-alignCenter-spaceBetween;
+        @extend %flex-alignCenter-justifyBetween;
         margin-bottom: 32px;
     }
     .filter {        
@@ -32,7 +32,7 @@
             @extend %font-regular-16;
         }
         &Btn {
-            @extend %flex-alignCenter-spaceBetween;
+            @extend %flex-alignCenter-justifyBetween;
         }
         &Dropdown {
             background-color: $color-white-0;
@@ -43,6 +43,7 @@
             top: 25px;
             left: 0;
             width: 100%;
+            z-index: 1;
             li {                
                 &:first-child {
                     margin-bottom: 11px;
@@ -57,7 +58,7 @@
         }
     }   
     .trendingmovies {
-        @extend %flex-alignStart-spaceBetween;
+        @extend %flex-alignStart-justifyCenter;
         flex-wrap: wrap;
         gap: 32px 16px;
         padding-bottom: 52px;
@@ -79,7 +80,7 @@
             position: absolute;
             bottom: 0;
             width: 100%;
-            @extend %flex-alignCenter-spaceBetween;
+            @extend %flex-alignCenter-justifyBetween;
             gap: 10px;
             background: $blue-gradient;
             padding: 10px 23px;
@@ -113,7 +114,7 @@
     }
     &Pagination {
         ul {
-            @extend %flex-alignCenter-spaceBetween;
+            @extend %flex-alignCenter-justifyBetween;
             width: 310px;
             max-width: 100%;
             margin: auto;

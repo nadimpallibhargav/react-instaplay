@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/react-instaplay/static/css/main.8ccfd01a.css",
-    "main.js": "/react-instaplay/static/js/main.60b2ec48.js",
+    "main.css": "/react-instaplay/static/css/main.bba3a3c0.css",
+    "main.js": "/react-instaplay/static/js/main.a78b4ad3.js",
     "static/js/787.e641f7ee.chunk.js": "/react-instaplay/static/js/787.e641f7ee.chunk.js",
     "static/media/homeBanner.png": "/react-instaplay/static/media/homeBanner.46519eeabdf9414e87ca.png",
+    "static/media/inputLoader.gif": "/react-instaplay/static/media/inputLoader.8981e9a58e16221f8156.gif",
     "index.html": "/react-instaplay/index.html",
+    "static/media/rightArrow.svg": "/react-instaplay/static/media/rightArrow.e6decdf4bf4871da655a11f3c383d57e.svg",
+    "static/media/leftArrow.svg": "/react-instaplay/static/media/leftArrow.e7f655fc2913edad555cbfec7890ebf0.svg",
     "static/media/homePlay.svg": "/react-instaplay/static/media/homePlay.fdecc4f5435545ca89bd236a504122b5.svg",
     "static/media/search.svg": "/react-instaplay/static/media/search.cbe70251c35bafdcc506cf6e98554d3c.svg",
     "static/media/filter.svg": "/react-instaplay/static/media/filter.363a6751e6a8b8282919d5e1a669e469.svg",
     "static/media/homeStar.svg": "/react-instaplay/static/media/homeStar.c269ce952a169b1091e7f0696a0cd30f.svg",
     "static/media/downArrow.svg": "/react-instaplay/static/media/downArrow.d8a9e080929123652b474a40fba8b35c.svg",
-    "main.8ccfd01a.css.map": "/react-instaplay/static/css/main.8ccfd01a.css.map",
-    "main.60b2ec48.js.map": "/react-instaplay/static/js/main.60b2ec48.js.map",
+    "main.bba3a3c0.css.map": "/react-instaplay/static/css/main.bba3a3c0.css.map",
+    "main.a78b4ad3.js.map": "/react-instaplay/static/js/main.a78b4ad3.js.map",
     "787.e641f7ee.chunk.js.map": "/react-instaplay/static/js/787.e641f7ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ccfd01a.css",
-    "static/js/main.60b2ec48.js"
+    "static/css/main.bba3a3c0.css",
+    "static/js/main.a78b4ad3.js"
   ]
 }
